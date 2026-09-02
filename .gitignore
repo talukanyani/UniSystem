@@ -1,0 +1,63 @@
+
+# Visual Studio user settings and workspace files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Test results and code coverage
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+coverage.*
+
+# NuGet-generated files and packages
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Published application output
+[Pp]ublish/
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.DotSettings.user
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini

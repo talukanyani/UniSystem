@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UniSystem.Core\UniSystem.Core.csproj" />
+    <ProjectReference Include="..\UniSytem.Infrastructure\UniSytem.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

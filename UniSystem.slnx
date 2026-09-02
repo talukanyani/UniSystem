@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="UniSystem.Console/UniSystem.Console.csproj" />
+  <Project Path="UniSystem.Core/UniSystem.Core.csproj" />
+  <Project Path="UniSystem.Tests/UniSystem.Tests.csproj" />
+  <Project Path="UniSytem.Infrastructure/UniSytem.Infrastructure.csproj" />
+</Solution>
