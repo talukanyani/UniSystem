@@ -9,7 +9,7 @@ Console.WriteLine();
 
 var department = new Department
 {
-    Code = "MC01",
+    Code = "MATCS",
     Name = "Department of Mathematical and Computational Sciences"
 };
 

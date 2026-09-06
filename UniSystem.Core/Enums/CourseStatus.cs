@@ -1,6 +1,6 @@
 ﻿namespace UniSystem.Core.Enums;
 
-public enum CoursesStatus
+public enum CourseStatus
 {
     Active,
     Inactive,
