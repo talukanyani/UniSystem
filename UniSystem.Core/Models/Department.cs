@@ -1,10 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 using UniSystem.Core.Exceptions;
+using UniSystem.Core.Interfaces;
 using UniSystem.Core.Validation;
 
 namespace UniSystem.Core.Models;
 
-public sealed class Department
+public sealed class Department : IEntity
 {
     private static readonly Regex CodePattern =
         new(@"^[A-Z]{2,6}$", RegexOptions.Compiled);

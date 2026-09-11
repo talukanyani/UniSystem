@@ -1,8 +1,9 @@
-﻿using UniSystem.Core.Validation;
+﻿using UniSystem.Core.Interfaces;
+using UniSystem.Core.Validation;
 
 namespace UniSystem.Core.Models;
 
-public abstract class Person
+public abstract class Person : IEntity
 {
     private string _firstName = string.Empty;
     private string _lastName = string.Empty;

@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UniSystem.Core\UniSystem.Core.csproj" />
+    <ProjectReference Include="..\UniSytem.Infrastructure\UniSytem.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
