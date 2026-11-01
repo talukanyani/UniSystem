@@ -2,10 +2,15 @@
 
 public sealed class MainMenu
 {
+    private readonly StudentMenu _studentMenu;
+
+    public MainMenu(StudentMenu studentMenu)
+    {
+        _studentMenu = studentMenu;
+    }
+
     public void Run()
     {
-        ConsoleMenu studentMenu = CreateStudentMenu();
-
         var mainMenu = new ConsoleMenu(
             "UniSystem Main Menu",
             new List<MenuOption>
@@ -13,8 +18,8 @@ public sealed class MainMenu
                 new(
                     "1",
                     "Manage students",
-                    studentMenu.Run
-                ),
+                    _studentMenu.Run
+                    ),
                 new(
                     "2",
                     "Manage lecturers",
@@ -48,52 +53,6 @@ public sealed class MainMenu
         );
 
         mainMenu.Run();
-    }
-
-    private static ConsoleMenu CreateStudentMenu()
-    {
-        return new ConsoleMenu(
-            "Student Management",
-            new List<MenuOption>
-            {
-                new(
-                    "1",
-                    "Register a student",
-                    () => ShowComingSoon(
-                        "Student registration"
-                    )
-                ),
-                new(
-                    "2",
-                    "List all students",
-                    () => ShowComingSoon(
-                        "Student listing"
-                    )
-                ),
-                new(
-                    "3",
-                    "Search for a student",
-                    () => ShowComingSoon(
-                        "Student searching"
-                    )
-                ),
-                new(
-                    "4",
-                    "Update a student",
-                    () => ShowComingSoon(
-                        "Student updating"
-                    )
-                ),
-                new(
-                    "5",
-                    "Remove a student",
-                    () => ShowComingSoon(
-                        "Student removal"
-                    )
-                )
-            },
-            "Return to main menu"
-        );
     }
 
     private static void ShowComingSoon(string feature)

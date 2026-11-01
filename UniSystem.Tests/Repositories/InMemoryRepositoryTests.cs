@@ -123,7 +123,7 @@ public sealed class InMemoryRepositoryTests
     }
 
     private static Student CreateStudent(
-        string studentNumber = "24044229")
+        string studentNumber = "24044238")
     {
         return new Student
         {
