@@ -14,7 +14,7 @@ public sealed class Lecturer : Person
             value,
             nameof(StaffNumber),
             20
-        );
+        ).ToUpperInvariant();
     }
 
     public string? Title { get; set; }

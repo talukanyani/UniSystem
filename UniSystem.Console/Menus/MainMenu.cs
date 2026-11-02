@@ -3,10 +3,14 @@
 public sealed class MainMenu
 {
     private readonly StudentMenu _studentMenu;
+    private readonly LecturerMenu _lecturerMenu;
 
-    public MainMenu(StudentMenu studentMenu)
+    public MainMenu(
+        StudentMenu studentMenu,
+        LecturerMenu lecturerMenu)
     {
         _studentMenu = studentMenu;
+        _lecturerMenu = lecturerMenu;
     }
 
     public void Run()
@@ -23,9 +27,7 @@ public sealed class MainMenu
                 new(
                     "2",
                     "Manage lecturers",
-                    () => ShowComingSoon(
-                        "Lecturer management"
-                    )
+                    _lecturerMenu.Run
                 ),
                 new(
                     "3",
